@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF82CC2C1C1C10A400F57528 /* Colors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF82CC211C1C10A400F57528 /* Colors.framework */; settings = {ASSET_TAGS = (); }; };
 		FF82CC311C1C10A400F57528 /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC301C1C10A400F57528 /* ColorsTests.swift */; };
-		FF82CC3C1C1C10B600F57528 /* ANSITextColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC3B1C1C10B600F57528 /* ANSITextColorCode.swift */; settings = {ASSET_TAGS = (); }; };
-		FF82CC3E1C1C156C00F57528 /* ANSIBgColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC3D1C1C156C00F57528 /* ANSIBgColorCode.swift */; settings = {ASSET_TAGS = (); }; };
+		FF82CC3E1C1C156C00F57528 /* ANSIColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC3D1C1C156C00F57528 /* ANSIColorCode.swift */; settings = {ASSET_TAGS = (); }; };
 		FF82CC401C1C164E00F57528 /* ANSIModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC3F1C1C164E00F57528 /* ANSIModifiers.swift */; settings = {ASSET_TAGS = (); }; };
 		FF82CC421C1C9C0800F57528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC411C1C9C0800F57528 /* Colors.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -31,8 +30,7 @@
 		FF82CC2B1C1C10A400F57528 /* ColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF82CC301C1C10A400F57528 /* ColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTests.swift; sourceTree = "<group>"; };
 		FF82CC321C1C10A400F57528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF82CC3B1C1C10B600F57528 /* ANSITextColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSITextColorCode.swift; sourceTree = "<group>"; };
-		FF82CC3D1C1C156C00F57528 /* ANSIBgColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSIBgColorCode.swift; sourceTree = "<group>"; };
+		FF82CC3D1C1C156C00F57528 /* ANSIColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSIColorCode.swift; sourceTree = "<group>"; };
 		FF82CC3F1C1C164E00F57528 /* ANSIModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSIModifiers.swift; sourceTree = "<group>"; };
 		FF82CC411C1C9C0800F57528 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				FF82CC261C1C10A400F57528 /* Info.plist */,
-				FF82CC3B1C1C10B600F57528 /* ANSITextColorCode.swift */,
-				FF82CC3D1C1C156C00F57528 /* ANSIBgColorCode.swift */,
+				FF82CC3D1C1C156C00F57528 /* ANSIColorCode.swift */,
 				FF82CC3F1C1C164E00F57528 /* ANSIModifiers.swift */,
 				FF82CC411C1C9C0800F57528 /* Colors.swift */,
 			);
@@ -202,10 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF82CC3E1C1C156C00F57528 /* ANSIBgColorCode.swift in Sources */,
+				FF82CC3E1C1C156C00F57528 /* ANSIColorCode.swift in Sources */,
 				FF82CC421C1C9C0800F57528 /* Colors.swift in Sources */,
 				FF82CC401C1C164E00F57528 /* ANSIModifiers.swift in Sources */,
-				FF82CC3C1C1C10B600F57528 /* ANSITextColorCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +388,7 @@
 				FF82CC371C1C10A400F57528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF82CC381C1C10A400F57528 /* Build configuration list for PBXNativeTarget "ColorsTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +397,7 @@
 				FF82CC3A1C1C10A400F57528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

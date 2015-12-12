@@ -8,6 +8,7 @@
 
 struct ANSIModifiers {
     static var bold = [1, 22]
+    static var blink = [5, 25]
     static var dim = [2, 22]
     static var italic = [2, 23]
     static var underline = [4, 24]

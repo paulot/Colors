@@ -11,6 +11,7 @@ import XCTest
 
 class ColorsTests: XCTestCase {
 
+    // MARK: Test normal colors
     func testBlack() {
         XCTAssertEqual(Colors.black("black"), "\u{1B}[30mblack\u{1B}[39m")
     }
@@ -43,10 +44,40 @@ class ColorsTests: XCTestCase {
         XCTAssertEqual(Colors.white("white"), "\u{1B}[37mwhite\u{1B}[39m")
     }
 
-    func testGray() {
-        XCTAssertEqual(Colors.gray("gray"), "\u{1B}[90mgray\u{1B}[39m")
+    // MARK: Test bright colors
+    func testBrightBlack() {
+        XCTAssertEqual(Colors.Black("Black"), "\u{1B}[90mBlack\u{1B}[39m")
     }
 
+    func testBrightRed() {
+        XCTAssertEqual(Colors.Red("Red"), "\u{1B}[91mRed\u{1B}[39m")
+    }
+
+    func testBrightGreen() {
+        XCTAssertEqual(Colors.Green("Green"), "\u{1B}[92mGreen\u{1B}[39m")
+    }
+
+    func testBrightYellow() {
+        XCTAssertEqual(Colors.Yellow("Yellow"), "\u{1B}[93mYellow\u{1B}[39m")
+    }
+
+    func testBrightBlue() {
+        XCTAssertEqual(Colors.Blue("Blue"), "\u{1B}[94mBlue\u{1B}[39m")
+    }
+
+    func testBrightMagenta() {
+        XCTAssertEqual(Colors.Magenta("Magenta"), "\u{1B}[95mMagenta\u{1B}[39m")
+    }
+
+    func testBrightCyan() {
+        XCTAssertEqual(Colors.Cyan("Cyan"), "\u{1B}[96mCyan\u{1B}[39m")
+    }
+
+    func testBrightWhite() {
+        XCTAssertEqual(Colors.White("White"), "\u{1B}[97mWhite\u{1B}[39m")
+    }
+
+    // MARK: Test normal background colors
     func testBgBlack() {
         XCTAssertEqual(Colors.bgBlack("bgBlack"), "\u{1B}[40mbgBlack\u{1B}[49m")
     }
@@ -79,6 +110,40 @@ class ColorsTests: XCTestCase {
         XCTAssertEqual(Colors.bgWhite("bgWhite"), "\u{1B}[47mbgWhite\u{1B}[49m")
     }
 
+    // MARK: Test normal background colors
+    func testBrightBgBlack() {
+        XCTAssertEqual(Colors.BgBlack("BgBlack"), "\u{1B}[100mBgBlack\u{1B}[49m")
+    }
+
+    func testBrightBgRed() {
+        XCTAssertEqual(Colors.BgRed("BgRed"), "\u{1B}[101mBgRed\u{1B}[49m")
+    }
+
+    func testBrightBgGreen() {
+        XCTAssertEqual(Colors.BgGreen("BgGreen"), "\u{1B}[102mBgGreen\u{1B}[49m")
+    }
+
+    func testBrightBgYellow() {
+        XCTAssertEqual(Colors.BgYellow("BgYellow"), "\u{1B}[103mBgYellow\u{1B}[49m")
+    }
+
+    func testBrightBgBlue() {
+        XCTAssertEqual(Colors.BgBlue("BgBlue"), "\u{1B}[104mBgBlue\u{1B}[49m")
+    }
+
+    func testBrightBgMagenta() {
+        XCTAssertEqual(Colors.BgMagenta("BgMagenta"), "\u{1B}[105mBgMagenta\u{1B}[49m")
+    }
+
+    func testBrightBgCyan() {
+        XCTAssertEqual(Colors.BgCyan("BgCyan"), "\u{1B}[106mBgCyan\u{1B}[49m")
+    }
+
+    func testBrightBgWhite() {
+        XCTAssertEqual(Colors.BgWhite("BgWhite"), "\u{1B}[107mBgWhite\u{1B}[49m")
+    }
+
+    // MARK: Test modifiers
     func testBold() {
         XCTAssertEqual(Colors.bold("bold"), "\u{1B}[1mbold\u{1B}[22m")
     }
