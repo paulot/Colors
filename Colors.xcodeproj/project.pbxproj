@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF82CC2C1C1C10A400F57528 /* Colors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF82CC211C1C10A400F57528 /* Colors.framework */; settings = {ASSET_TAGS = (); }; };
+		FF82CC311C1C10A400F57528 /* ColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC301C1C10A400F57528 /* ColorsTests.swift */; };
+		FF82CC3C1C1C10B600F57528 /* ANSITextColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC3B1C1C10B600F57528 /* ANSITextColorCode.swift */; settings = {ASSET_TAGS = (); }; };
+		FF82CC3E1C1C156C00F57528 /* ANSIBgColorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC3D1C1C156C00F57528 /* ANSIBgColorCode.swift */; settings = {ASSET_TAGS = (); }; };
+		FF82CC401C1C164E00F57528 /* ANSIModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC3F1C1C164E00F57528 /* ANSIModifiers.swift */; settings = {ASSET_TAGS = (); }; };
+		FF82CC421C1C9C0800F57528 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF82CC411C1C9C0800F57528 /* Colors.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF82CC2D1C1C10A400F57528 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF82CC181C1C10A400F57528 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF82CC201C1C10A400F57528;
+			remoteInfo = Colors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF82CC211C1C10A400F57528 /* Colors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Colors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF82CC261C1C10A400F57528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF82CC2B1C1C10A400F57528 /* ColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF82CC301C1C10A400F57528 /* ColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTests.swift; sourceTree = "<group>"; };
+		FF82CC321C1C10A400F57528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF82CC3B1C1C10B600F57528 /* ANSITextColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSITextColorCode.swift; sourceTree = "<group>"; };
+		FF82CC3D1C1C156C00F57528 /* ANSIBgColorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSIBgColorCode.swift; sourceTree = "<group>"; };
+		FF82CC3F1C1C164E00F57528 /* ANSIModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ANSIModifiers.swift; sourceTree = "<group>"; };
+		FF82CC411C1C9C0800F57528 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF82CC1D1C1C10A400F57528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF82CC281C1C10A400F57528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF82CC2C1C1C10A400F57528 /* Colors.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF82CC171C1C10A400F57528 = {
+			isa = PBXGroup;
+			children = (
+				FF82CC231C1C10A400F57528 /* Colors */,
+				FF82CC2F1C1C10A400F57528 /* ColorsTests */,
+				FF82CC221C1C10A400F57528 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF82CC221C1C10A400F57528 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF82CC211C1C10A400F57528 /* Colors.framework */,
+				FF82CC2B1C1C10A400F57528 /* ColorsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF82CC231C1C10A400F57528 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				FF82CC261C1C10A400F57528 /* Info.plist */,
+				FF82CC3B1C1C10B600F57528 /* ANSITextColorCode.swift */,
+				FF82CC3D1C1C156C00F57528 /* ANSIBgColorCode.swift */,
+				FF82CC3F1C1C164E00F57528 /* ANSIModifiers.swift */,
+				FF82CC411C1C9C0800F57528 /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		FF82CC2F1C1C10A400F57528 /* ColorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF82CC301C1C10A400F57528 /* ColorsTests.swift */,
+				FF82CC321C1C10A400F57528 /* Info.plist */,
+			);
+			path = ColorsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FF82CC1E1C1C10A400F57528 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FF82CC201C1C10A400F57528 /* Colors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF82CC351C1C10A400F57528 /* Build configuration list for PBXNativeTarget "Colors" */;
+			buildPhases = (
+				FF82CC1C1C1C10A400F57528 /* Sources */,
+				FF82CC1D1C1C10A400F57528 /* Frameworks */,
+				FF82CC1E1C1C10A400F57528 /* Headers */,
+				FF82CC1F1C1C10A400F57528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Colors;
+			productName = Colors;
+			productReference = FF82CC211C1C10A400F57528 /* Colors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF82CC2A1C1C10A400F57528 /* ColorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF82CC381C1C10A400F57528 /* Build configuration list for PBXNativeTarget "ColorsTests" */;
+			buildPhases = (
+				FF82CC271C1C10A400F57528 /* Sources */,
+				FF82CC281C1C10A400F57528 /* Frameworks */,
+				FF82CC291C1C10A400F57528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF82CC2E1C1C10A400F57528 /* PBXTargetDependency */,
+			);
+			name = ColorsTests;
+			productName = ColorsTests;
+			productReference = FF82CC2B1C1C10A400F57528 /* ColorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF82CC181C1C10A400F57528 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Paulo Tanaka";
+				TargetAttributes = {
+					FF82CC201C1C10A400F57528 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					FF82CC2A1C1C10A400F57528 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = FF82CC1B1C1C10A400F57528 /* Build configuration list for PBXProject "Colors" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF82CC171C1C10A400F57528;
+			productRefGroup = FF82CC221C1C10A400F57528 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF82CC201C1C10A400F57528 /* Colors */,
+				FF82CC2A1C1C10A400F57528 /* ColorsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF82CC1F1C1C10A400F57528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF82CC291C1C10A400F57528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF82CC1C1C1C10A400F57528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF82CC3E1C1C156C00F57528 /* ANSIBgColorCode.swift in Sources */,
+				FF82CC421C1C9C0800F57528 /* Colors.swift in Sources */,
+				FF82CC401C1C164E00F57528 /* ANSIModifiers.swift in Sources */,
+				FF82CC3C1C1C10B600F57528 /* ANSITextColorCode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF82CC271C1C10A400F57528 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF82CC311C1C10A400F57528 /* ColorsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF82CC2E1C1C10A400F57528 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF82CC201C1C10A400F57528 /* Colors */;
+			targetProxy = FF82CC2D1C1C10A400F57528 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FF82CC331C1C10A400F57528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF82CC341C1C10A400F57528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FF82CC361C1C10A400F57528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Colors/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Colors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF82CC371C1C10A400F57528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Colors/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Colors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FF82CC391C1C10A400F57528 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ColorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ColorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF82CC3A1C1C10A400F57528 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ColorsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ColorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF82CC1B1C1C10A400F57528 /* Build configuration list for PBXProject "Colors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF82CC331C1C10A400F57528 /* Debug */,
+				FF82CC341C1C10A400F57528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF82CC351C1C10A400F57528 /* Build configuration list for PBXNativeTarget "Colors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF82CC361C1C10A400F57528 /* Debug */,
+				FF82CC371C1C10A400F57528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF82CC381C1C10A400F57528 /* Build configuration list for PBXNativeTarget "ColorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF82CC391C1C10A400F57528 /* Debug */,
+				FF82CC3A1C1C10A400F57528 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF82CC181C1C10A400F57528 /* Project object */;
+}
