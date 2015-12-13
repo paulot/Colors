@@ -1,4 +1,8 @@
-# Colors
+<h1 align="center">
+	<img width="600" src="https://raw.githubusercontent.com/paulot/Colors/master/media/logo.png" alt="colors">
+</h1>
+
+#
 
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
