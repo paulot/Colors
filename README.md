@@ -29,10 +29,41 @@ var error = Colors.bold >>> Colors.red >>> Colors.underline
 print(error("There was an error"))
 ```
 
+## Styles
+### Bright/Normal Text Colors
+- `Black/black`
+- `Red/red`
+- `Green/green`
+- `Yellow/yellow`
+- `Blue/blue`
+- `Magenta/magenta`
+- `Cyan/cyan`
+- `White/white`
+
+### Bright/Normal Background Colors
+- `BgBlack/bgBlack`
+- `BgRed/bgRed`
+- `BgGreen/bgGreen`
+- `BgYellow/bgYellow`
+- `BgBlue/bgBlue`
+- `BgMagenta/bgMagenta`
+- `BgCyan/bgCyan`
+- `BgWhite/bgWhite`
+
+### Text modifiers
+- `blink`
+- `bold`
+- `dim`
+- `italic`
+- `underline`
+- `inverse`
+- `hidden`
+- `strikethrough`
+
 ##API
 
 ### `Colors.<style>(text: String) -> String`
-Applies the specified `<style>` to the given text. For a list of styles check the styles section below.
+Applies the specified `<style>` to the given text. For a list of styles check the [styles](https://github.com/paulot/Colors/blob/master/README.md#styles) section above.
 
 ```swift
 Colors.underline("Underlined text")
@@ -100,33 +131,7 @@ let info = Colors.getBgColorer(23) >>> Colors.underline >>> Colors.Red
 print(info("Some Warning"))
 ```
 
-## Styles
-### Bright/Normal Text Colors
-- `Black/black`
-- `Red/red`
-- `Green/green`
-- `Yellow/yellow`
-- `Blue/blue`
-- `Magenta/magenta`
-- `Cyan/cyan`
-- `White/white`
+## License
 
-### Bright/Normal Background Colors
-- `BgBlack/bgBlack`
-- `BgRed/bgRed`
-- `BgGreen/bgGreen`
-- `BgYellow/bgYellow`
-- `BgBlue/bgBlue`
-- `BgMagenta/bgMagenta`
-- `BgCyan/bgCyan`
-- `BgWhite/bgWhite`
 
-### Text modifiers
-- `blink`
-- `bold`
-- `dim`
-- `italic`
-- `underline`
-- `inverse`
-- `hidden`
-- `strikethrough`
+MIT © [Paulo Tanaka](http://github.com/paulot)
