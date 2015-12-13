@@ -1,6 +1,13 @@
 # Colors
-> Terminal string styling for Swift
+
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+[![Issues](https://img.shields.io/github/issues/paulot/Colors.svg
+)](https://github.com/paulot/Colors/issues?state=open)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/paulot/Colors/blob/master/LICENSE)
 [![](http://img.shields.io/badge/unicorn-approved-ff69b4.svg)](https://www.youtube.com/watch?v=9auOCbH5Ns4)
+
+> Terminal string styling for Swift
 
 **Colors is a clean and focused solution for string styling in Swift.**
 ![](https://raw.githubusercontent.com/paulot/Colors/master/media/ANSIColors.png)
