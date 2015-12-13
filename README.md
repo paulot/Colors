@@ -41,13 +41,18 @@ print(error("There was an error"))
 
 ### Cocoapods
 Install cocoapods:
-```
+```bash
 sudo gem install cocoapods
 ```
 
 Then specify `Colors` in your `Podfile`:
-```
+```ruby
 pod 'Colors', '~> 0.1'
+```
+
+Finally run:
+```bash
+pod install
 ```
 
 ## Styles
