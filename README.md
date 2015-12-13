@@ -37,6 +37,18 @@ func >>> <A, B, C>(f: B -> C, g: A -> B) -> A -> C {
 var error = Colors.bold >>> Colors.red >>> Colors.underline
 print(error("There was an error"))
 ```
+## Installation
+
+### Cocoapods
+Install cocoapods:
+```
+sudo gem install cocoapods
+```
+
+Then specify `Colors` in your `Podfile`:
+```
+pod 'Colors', '~> 0.1'
+```
 
 ## Styles
 ### Bright/Normal Text Colors
