@@ -21,7 +21,7 @@ public class Colors {
     static let brightText = 90
     static let brightBg = 100
 
-    // MARK: 256-bit color functions
+    // MARK: 8-bit color functions
     public static func getTextColorer(color: Int) -> (String -> String) {
         return apply(["38;5;\(color)", String(normalText + 9)])
     }
