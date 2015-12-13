@@ -6,7 +6,7 @@
 //  Copyright © 2015 Paulo Tanaka. All rights reserved.
 //
 
-func apply(style: [Int]) -> (String -> String) {
+func apply<T>(style: [T]) -> (String -> String) {
     return { str in return "\u{001B}[\(style[0])m\(str)\u{001B}[\(style[1])m" }
 }
 
@@ -20,6 +20,23 @@ public class Colors {
     static let bg = 40
     static let brightText = 90
     static let brightBg = 100
+
+    // MARK: 256-bit color functions
+    public static func getTextColorer(color: Int) -> (String -> String) {
+        return apply(["38;5;\(color)", String(normalText + 9)])
+    }
+
+    public static func colorText(text: String, color: Int) -> String {
+        return Colors.getTextColorer(color)(text)
+    }
+
+    public static func getBgColorer(color: Int) -> (String -> String) {
+        return apply(["48;5;\(color)", String(bg + 9)])
+    }
+
+    public static func colorBg(text: String, color: Int) -> String {
+        return Colors.getBgColorer(color)(text)
+    }
 
     // MARK: Normal text colors
     public static var black = apply(getColor(ANSIColorCode.black, mod: normalText))
