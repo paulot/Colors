@@ -15,8 +15,6 @@ print(Colors.Blue("Bright blue string"))
 
 Addtionaly, you can compose modifiers:
 ```swift
-import Colors
-
 print(Colors.blue(Colors.bgRed("Blue string with red background")))
 ```
 
@@ -32,6 +30,77 @@ print(error("There was an error"))
 ```
 
 ##API
+
+### `Colors.<style>(text: String) -> String`
+Applies the specified `<style>` to the given text. For a list of styles check the styles section below.
+
+```swift
+Colors.underline("Underlined text")
+```
+
+### `Colors.colorText(text: String, color: Int) -> String`
+**Requires 8-bit color support from the console.**
+
+Colors the letters of the given `text` with the specified `color`. `color` must be an integer from 0-255 representing an 8-bit color. For a list of 8-bit colors check [here](http://bitmote.com/index.php?post/2012/11/19/Using-ANSI-Color-Codes-to-Colorize-Your-Bash-Prompt-on-Linux).
+
+Generally useful if you want to color the text with very specific colors.
+```swift
+for i in 0...255 {
+    print(Colors.colorText("a", color: i), terminator: "")
+}
+```
+Outputs:
+![](https://raw.githubusercontent.com/paulot/Colors/master/media/Text.png)
+
+### `Colors.colorBg(text: String, color: Int) -> String`
+**Requires 8-bit color support from the console.**
+
+Colors the background of the given `text` with the specified `color`. `color` must be an integer from 0-255 representing an 8-bit color. For a list of 8-bit colors check [here](http://bitmote.com/index.php?post/2012/11/19/Using-ANSI-Color-Codes-to-Colorize-Your-Bash-Prompt-on-Linux).
+
+Generally useful if you want to color the background with very specific colors.
+```swift
+for i in 0...255 {
+    print(Colors.colorBg(" ", color: i), terminator: "")
+}
+```
+Outputs:
+![](https://raw.githubusercontent.com/paulot/Colors/master/media/Backgrounds.png)
+
+### `Colors.getTextColorer(color: Int) -> (String -> String)`
+**Requires 8-bit color support from the console.**
+
+Returns a colorer function that will color the characters of the input string with the specified color.
+
+Useful for defining your own style compositions with 8-bit colors.
+
+```swift
+infix operator >>> { associativity left }
+func >>> <A, B, C>(f: B -> C, g: A -> B) -> A -> C {
+  return { x in f(g(x)) }
+}
+
+let warning = Colors.getTextColorer(23) >>> Colors.underline >>> Colors.BgRed
+print(error("Some Warning"))
+```
+
+### `Colors.getBgColorer(color: Int) -> (String -> String)`
+**Requires 8-bit color support from the console.**
+
+Returns a colorer function that will color the background of the input string with the specified color.
+
+Useful for defining your own style compositions with 8-bit colors.
+
+```swift
+infix operator >>> { associativity left }
+func >>> <A, B, C>(f: B -> C, g: A -> B) -> A -> C {
+  return { x in f(g(x)) }
+}
+
+let info = Colors.getBgColorer(23) >>> Colors.underline >>> Colors.Red
+print(info("Some Warning"))
+```
+
+## Styles
 ### Bright/Normal Text Colors
 - `Black/black`
 - `Red/red`
@@ -52,3 +121,12 @@ print(error("There was an error"))
 - `BgCyan/bgCyan`
 - `BgWhite/bgWhite`
 
+### Text modifiers
+- `blink`
+- `bold`
+- `dim`
+- `italic`
+- `underline`
+- `inverse`
+- `hidden`
+- `strikethrough`
