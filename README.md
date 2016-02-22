@@ -10,7 +10,7 @@
 )](https://github.com/paulot/Colors/issues?state=open)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/paulot/Colors/blob/master/LICENSE)
 [![Build](https://travis-ci.org/paulot/Colors.svg?branch=master)](https://travis-ci.org/paulot/Colors)
-[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/Colors/badge.png)](https://cocoapods.org/pods/Colors)
+[![CocoaPods](https://cocoapod-badges.herokuapp.com/v/Colors/badge.png)](https://cocoapods.org/pods/Colors)
 [![](http://img.shields.io/badge/unicorn-approved-ff69b4.svg)](https://www.youtube.com/watch?v=9auOCbH5Ns4)
 
 > Terminal string styling for Swift
@@ -43,7 +43,7 @@ print(error("There was an error"))
 ```
 ## Installation
 
-### Cocoapods
+### CocoaPods
 Install cocoapods:
 ```bash
 sudo gem install cocoapods
