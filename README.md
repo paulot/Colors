@@ -18,7 +18,9 @@
 **Colors is a clean and focused solution for string styling in Swift.**
 ![](https://raw.githubusercontent.com/paulot/Colors/master/media/ANSIColors.png)
 
-##Usage
+
+## Usage
+
 ``` swift
 import Colors
 
